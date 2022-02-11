@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Quantify - The Unit Convertor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="header">
+    <div class="menu">
+        <div>Quantify - The Unit Converter</div>
+	<div><a href ="file:///C:/Users/ashur/OneDrive/Desktop/Computer%20Science%20Grade%208%20Term%203%20Project/about.html">About Us</a></div>
+	<div><a href ="file:///C:/Users/ashur/OneDrive/Desktop/Computer%20Science%20Grade%208%20Term%203%20Project/about.html">Imperial & Metric System</a></div>
+    </div>
+</div>
+<div  class="paragraph">
+<script>
+document.write("<br>");
+var input,convert;
+var choice = +prompt("If you want to convert ton to pound, press 1.If you want to convert pound to ton, press 2.");
+if(choice === 1){	
+	var snippet = "you want to convert ton to pound ?";
+	var verify = confirm("Are you sure "+ snippet);}
+if(choice === 2){	
+	var snippet = "you want to convert pound to ton ?";
+	var verify = confirm("Are you sure "+ snippet);}
+if(verify === true && choice === 1 || choice === 2){
+	if(choice === 1){	
+	input = +prompt("Enter the ton value :");
+	convert = (input*2000)+" lb";
+	alert(convert);}
+
+	if(choice === 2){	
+	input = +prompt("Enter the pound value :");
+	convert = (input/2000)+" t";
+	alert(convert);}
+}
+else 
+	alert("Please enter 1 or 2 and verify the same");
+if(choice === 1)	
+	document.write("Input value : "+input+" t<br>");
+if(choice === 2)	
+	document.write("Input value : "+input+" lb<br>");
+document.write("Output value : "+convert);
+</script>
+</div>
+</body>
+</html>
